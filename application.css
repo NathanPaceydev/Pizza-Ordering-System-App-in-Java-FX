@@ -1,0 +1,73 @@
+/* Style Sheet used for the GUI app
+ * All code written by Nathan Pacey
+ID: 18njp, 20153310*/
+.root{
+	-fx-vgap: 20px;
+	-fx-hgap: 20px;
+	-fx-padding: 30px;
+	-fx-alignment: center;
+	-fx-background-image: url("Background.JPG");
+	
+	-fx-background-color: yellow;
+	/* Cant see the grad since the texture image is there */
+	
+}
+
+.sizeBox {
+	-fx-background-color: #FF7A59;
+	-fx-background-opacity: 0.2;
+	
+}
+
+.cheeseBox{
+	-fx-background-color: #F9EEC9;
+}
+
+.vegCheck{
+	-fx-background-color: transparent;
+}
+.vegCheck:selected .radio .dot {
+	-fx-background-color:#00CC66;
+	-fx-background-insets: 0;
+}
+
+.hamCheck{
+	-fx-background-color: transparent;
+}
+.hamCheck:selected .radio .dot {
+	-fx-background-color:#C77D1C;
+	-fx-background-insets: 0;
+}
+
+
+.pineappleCheck{
+	-fx-background-color: transparent;
+}
+.pineappleCheck:selected .box {
+	-fx-background-color:#FFEB3D;
+	-fx-background-insets: 0;
+}
+
+.greenPepperCheck{
+	-fx-background-color: transparent;
+}
+
+.greenPepperCheck:selected .box {
+	-fx-background-color:#00CC1A;
+	-fx-background-insets: 0;
+}
+
+
+.cost{
+	-fx-text-fill: green;
+}
+
+
+.vbox{
+	-fx-background-image: url("icon.jpg");
+	-fx-background-size: 60, 170;
+    -fx-background-repeat: no-repeat;
+    
+    -fx-padding: 10;
+    -fx-spacing: 20;
+}

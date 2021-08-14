@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="639.0" prefWidth="716.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PizzaController">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="145.20001220703125" minWidth="1.8000244140624986" prefWidth="38.39996337890625" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="228.79998779296872" minWidth="10.0" prefWidth="220.79998779296872" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="276.3999938964844" minWidth="10.0" prefWidth="134.2" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="291.1999755859376" minWidth="10.0" prefWidth="291.1999755859376" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="113.20001831054688" minHeight="0.0" prefHeight="53.600006103515625" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="113.20001831054688" minHeight="9.400012207031253" prefHeight="35.79999694824219" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="235.2" minHeight="10.0" prefHeight="207.0000030517578" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="235.2" minHeight="0.0" prefHeight="17.40001220703124" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="235.2" minHeight="10.0" prefHeight="26.400006103515636" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="235.2" minHeight="10.0" prefHeight="40.59998779296876" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="156.8000518798828" minHeight="10.0" prefHeight="17.600012207031284" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="244.00003662109373" minHeight="10.0" prefHeight="243.19998779296873" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="198.40000610351564" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <VBox prefHeight="196.0" prefWidth="223.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+            <ComboBox id="size" fx:id="size" prefHeight="27.0" prefWidth="181.0" promptText="Size" style="-fx-background-color: #ffc2b2;" styleClass="sizeBox" stylesheets="@application.css">
+               <opaqueInsets>
+                  <Insets bottom="10.0" />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </ComboBox>
+            <ComboBox id="cheese" fx:id="cheese" prefHeight="29.0" prefWidth="181.0" promptText="Cheese" style="-fx-background-color: #F9EEC9;" styleClass="cheeseBox" stylesheets="@application.css">
+               <opaqueInsets>
+                  <Insets bottom="10.0" />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </ComboBox>
+            <RadioButton id="Vegetarian" fx:id="Vegetarian" mnemonicParsing="false" prefHeight="27.0" prefWidth="182.0" styleClass="vegCheck" stylesheets="@application.css" text="Vegetarian">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets bottom="10.0" />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <toggleGroup>
+                  <ToggleGroup fx:id="toppings" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton id="Ham" fx:id="ham" mnemonicParsing="false" prefHeight="31.0" prefWidth="231.0" styleClass="hamCheck" stylesheets="@application.css" text="Ham" toggleGroup="$toppings">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets bottom="10.0" />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </RadioButton>
+            <CheckBox id="Pineapple" fx:id="Pineapple" mnemonicParsing="false" prefHeight="33.0" prefWidth="233.0" styleClass="pineappleCheck" stylesheets="@application.css" text="Pineapple">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets bottom="10.0" />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="5.0" top="5.0" />
+               </VBox.margin>
+            </CheckBox>
+            <CheckBox id="greenPepper" fx:id="greenPepper" mnemonicParsing="false" prefHeight="29.0" prefWidth="234.0" styleClass="greenPepperCheck" stylesheets="@application.css" text="Green Pepper">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </CheckBox>
+         </children>
+      </VBox>
+      <VBox prefHeight="211.0" prefWidth="284.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+         <children>
+            <Label prefHeight="31.0" prefWidth="188.0" text="All Orders:" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextArea id="lineItems" fx:id="itemList" editable="false" prefHeight="190.0" prefWidth="283.0" promptText="- Total Order - " />
+         </children>
+      </VBox>
+      <Label alignment="TOP_RIGHT" prefHeight="118.0" prefWidth="134.0" text="Current Order :" textAlignment="RIGHT" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="How Many Pizzas? " textAlignment="RIGHT" wrappingWidth="223.58303451538086" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cost of Order :  " textAlignment="RIGHT" wrappingWidth="224.38308334350586" GridPane.columnIndex="1" GridPane.rowIndex="5">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField id="orderCost" fx:id="orderCost" editable="false" promptText="Cost..." styleClass="cost" stylesheets="@application.css" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+      <TextField id="totalCost" fx:id="totalCost" alignment="CENTER" editable="false" promptText="Total Cost ..." styleClass="cost" stylesheets="@application.css" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+      <Label alignment="TOP_RIGHT" contentDisplay="TOP" prefHeight="23.0" prefWidth="148.0" text="Total Cost :" textAlignment="RIGHT" GridPane.columnIndex="2" GridPane.rowIndex="7">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="5">
+         <children>
+            <Button id="save" fx:id="save" defaultButton="true" mnemonicParsing="false" onAction="#saveOrder" prefHeight="35.0" prefWidth="102.0" text="Save Order" textAlignment="RIGHT">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="clear" cancelButton="true" mnemonicParsing="false" prefHeight="35.0" prefWidth="103.0" text="Clear All" textFill="RED">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+         <children>
+            <Pane prefHeight="205.0" prefWidth="291.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="257.0">
+                     <children>
+                        <TextField id="sizeText" fx:id="sizeText" editable="false" promptText="Size ..." />
+                        <TextField id="cheeseText" fx:id="cheeseText" editable="false" promptText="Cheese ..." />
+                        <TextField id="vegText" fx:id="vegText" editable="false" promptText="Vegetarian?">
+                           <font>
+                              <Font name="Arial" size="12.0" />
+                           </font></TextField>
+                        <TextField fx:id="pineappleText" editable="false" promptText="Topping 1" />
+                        <TextField fx:id="greenPepperText" editable="false" promptText="Topping 2" />
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <AnchorPane prefHeight="49.0" prefWidth="342.0" GridPane.columnIndex="1">
+         <children>
+            <Text layoutX="7.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nathan's Pizza Ordering System" wrappingWidth="334.93670082092285">
+               <font>
+                  <Font name="Baskerville Old Face" size="26.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      
+      <Spinner id="numPizza" fx:id="numPizza" initialValue="0" max="100" min="0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+      <VBox prefHeight="129.0" prefWidth="145.0" styleClass="vbox" stylesheets="@application.css" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+   </children>
+</GridPane>
