@@ -1,5 +1,4 @@
 // All code written by Nathan Pacey
-// ID: 18njp, 20153310
 
 package application;
 	
