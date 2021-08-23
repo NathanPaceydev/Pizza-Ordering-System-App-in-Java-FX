@@ -2,14 +2,12 @@ package application;
 import java.io.Serializable;
 
 /**
- * This class is part of the solution for assignment 3. The class represents a pizza, containing
+ * The class represents a pizza, containing
  * the size, the amount of cheese, pineapple, green pepper and ham. It can also produce the cost 
  * of that pizza using hard-coded prices.
  * This version uses enums to control the legal choices for the pizza configuration.
-
- * @author Alan McLeod
- * @version 2.1
  */
+
 public class Pizza implements Serializable {
 
 	private static final long serialVersionUID = 406705374689411755L;
